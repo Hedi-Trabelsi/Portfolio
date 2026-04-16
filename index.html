@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hedi Trabelsi — Engineering student at ESPRIT, specializing in Cybersecurity and Cloud. Portfolio of projects and skills." />
+  <meta name="author" content="Hedi Trabelsi" />
+  <title>Hedi Trabelsi — Cybersecurity & Cloud Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-grid"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav-logo">
+      <span class="logo-bracket">&lt;</span>HT<span class="logo-bracket">/&gt;</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#creative">Creative</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">&gt; initializing_profile.exe</p>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Hedi Trabelsi</span>
+      </h1>
+      <h2 class="hero-subtitle">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-description">
+        Engineering student at <strong>ESPRIT</strong> in Tunisia, shaping my path in
+        <span class="highlight">Cybersecurity</span> and
+        <span class="highlight">Cloud</span>. Passionate about building secure,
+        scalable systems and exploring the edges of modern technology.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/Hedi-Trabelsi" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.93c.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.39-3.88-1.39-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/hedi-trabelsi-39370234a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="mailto:heditrabelsi412@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 13.065 23.64 4.5H.36L12 13.065zM24 6.033 12 14.6.003 6.033V19.5h23.994V6.033z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Hello! I'm <strong>Hedi Trabelsi</strong>, a 3rd-year engineering student at
+          <strong>Esprit School of Engineering</strong> in Tunisia — one of five years
+          toward my engineering degree.
+        </p>
+        <p>
+          I'm heading into the specialization of
+          <strong class="highlight">Cybersecurity and Cloud</strong>, where I plan
+          to focus on protecting modern systems, understanding attack surfaces, and
+          deploying resilient cloud infrastructure.
+        </p>
+        <p>
+          My work so far comes from academic projects — full-stack applications,
+          desktop software, and systems programming — each one a step toward the
+          broader goal of becoming a security-minded engineer who builds things that
+          don't break under pressure.
+        </p>
+        <p>
+          I'm always learning, always curious, and always open to new
+          opportunities and collaborations.
+        </p>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat-card">
+          <div class="stat-value">3<span>rd</span></div>
+          <div class="stat-label">Year Engineering<br/>Student</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">5</div>
+          <div class="stat-label">Years Cycle<br/>@ ESPRIT</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">∞</div>
+          <div class="stat-label">Things Left<br/>to Learn</div>
+        </div>
+        <div class="stat-card highlight-card">
+          <div class="stat-value">🔐</div>
+          <div class="stat-label">CyberSecurity<br/>& Cloud</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2 class="section-title">Skills &amp; Tools</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">💻</div>
+        <h3>Languages</h3>
+        <ul class="skill-list">
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>C / C++</li>
+          <li>HTML &amp; CSS</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">⚙️</div>
+        <h3>Frameworks &amp; Tools</h3>
+        <ul class="skill-list">
+          <li>JavaFX</li>
+          <li>Node.js</li>
+          <li>Symfony</li>
+          <li>XAMPP / phpMyAdmin</li>
+          <li>Git &amp; GitHub</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🛡️</div>
+        <h3>Cybersecurity</h3>
+        <ul class="skill-list">
+          <li>Network fundamentals</li>
+          <li>System security basics</li>
+          <li>Linux administration</li>
+          <li>Vulnerability awareness</li>
+          <li>Security mindset</li>
+        </ul>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">☁️</div>
+        <h3>Cloud &amp; DevOps</h3>
+        <ul class="skill-list">
+          <li>Virtualization</li>
+          <li>Linux servers</li>
+          <li>Docker (learning)</li>
+          <li>CI/CD concepts</li>
+          <li>Cloud fundamentals</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-divider"></div>
+    </div>
+    <p class="section-subtitle">
+      A look at what I've built so far — all academic projects from my time at ESPRIT.
+    </p>
+
+    <div class="projects-grid">
+      <article class="project-card reveal">
+        <div class="project-header">
+          <div class="project-icon">🌾</div>
+          <div class="project-links">
+            <a href="https://github.com/Hedi-Trabelsi/ESPRIT-PIDEV-3A30-2026-AGRICORE" target="_blank" rel="noopener" aria-label="GitHub repo">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.93c.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.39-3.88-1.39-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="project-title">AgriCore — Desktop App</h3>
+        <p class="project-description">
+          A JavaFX desktop application built for the PIDEV 3A30 academic project
+          (2025–2026). Integrates with a MySQL database via XAMPP / phpMyAdmin to
+          manage agriculture-related workflows.
+        </p>
+        <div class="project-tags">
+          <span>Java</span>
+          <span>JavaFX</span>
+          <span>MySQL</span>
+          <span>XAMPP</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-header">
+          <div class="project-icon">🌐</div>
+          <div class="project-links">
+            <a href="https://github.com/Hedi-Trabelsi/ESPRIT-PIWEB-3A30-2026-AGRICORE" target="_blank" rel="noopener" aria-label="GitHub repo">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.93c.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.39-3.88-1.39-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="project-title">AgriCore — Web App</h3>
+        <p class="project-description">
+          The web counterpart of the AgriCore project, built as part of the
+          PIWEB 3A30 course (2025–2026). Explores full-stack web development
+          practices and a collaborative, team-based workflow.
+        </p>
+        <div class="project-tags">
+          <span>JavaScript</span>
+          <span>Web</span>
+          <span>Full-stack</span>
+          <span>Team Project</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-header">
+          <div class="project-icon">⚡</div>
+          <div class="project-links">
+            <a href="https://github.com/Hedi-Trabelsi/Projet-C-2A" target="_blank" rel="noopener" aria-label="GitHub repo">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.93c.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.39-3.88-1.39-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="project-title">Projet C — 2nd Year</h3>
+        <p class="project-description">
+          A systems-level project written in C++ from my 2nd year at ESPRIT. A
+          foundation-building exercise in low-level programming, memory
+          management, and structured problem-solving.
+        </p>
+        <div class="project-tags">
+          <span>C++</span>
+          <span>Systems</span>
+          <span>Algorithms</span>
+        </div>
+      </article>
+
+      <article class="project-card project-card-more reveal">
+        <div class="project-header">
+          <div class="project-icon">✨</div>
+        </div>
+        <h3 class="project-title">More Coming Soon</h3>
+        <p class="project-description">
+          I'm actively working on new projects as I progress into my
+          Cybersecurity and Cloud specialization. Check my GitHub for the
+          latest work.
+        </p>
+        <a href="https://github.com/Hedi-Trabelsi" target="_blank" rel="noopener" class="btn btn-ghost btn-small">
+          Visit GitHub →
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Creative / Video Editing -->
+  <section id="creative" class="section section-creative">
+    <div class="creative-backdrop" aria-hidden="true"></div>
+
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <h2 class="section-title">Beyond Code</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="creative-intro reveal">
+      <div class="creative-tag">
+        <span class="rec-dot"></span> VIDEO EDITING &middot; MOTION &middot; AMVs
+      </div>
+      <h3 class="creative-headline">
+        I'm not just a coder —<br/>
+        I'm also a <span class="gradient-text-warm">video editor</span>.
+      </h3>
+      <p class="creative-lead">
+        For years I've been behind the timeline, cutting footage, syncing beats,
+        and layering effects. I've edited countless <strong>AMVs (Anime Music
+        Videos)</strong> and crafted short edits where every frame, every
+        transition, and every impact is placed with intent.
+      </p>
+      <p class="creative-lead">
+        My main weapon of choice is
+        <strong class="highlight-warm">Adobe After Effects</strong> — my
+        playground for motion graphics, visual effects, and everything that
+        makes a cut feel alive.
+      </p>
+    </div>
+
+    <!-- Feature cards -->
+    <div class="creative-grid">
+      <div class="creative-card reveal">
+        <div class="creative-icon">🎞️</div>
+        <h3>AMV Editing</h3>
+        <p>
+          Beat-synced cuts, emotional pacing, and frame-perfect timing.
+          Turning anime footage into music-driven stories that hit every drop
+          and breath of the track.
+        </p>
+      </div>
+      <div class="creative-card reveal">
+        <div class="creative-icon">✨</div>
+        <h3>Motion Graphics</h3>
+        <p>
+          Animated titles, kinetic typography, transitions, and overlays —
+          built from scratch in After Effects to make the video move with
+          personality.
+        </p>
+      </div>
+      <div class="creative-card reveal">
+        <div class="creative-icon">💥</div>
+        <h3>Visual Effects</h3>
+        <p>
+          Compositing, particles, shake, glow, distortion, and cinematic
+          post-processing. Making ordinary footage feel like a movie scene.
+        </p>
+      </div>
+      <div class="creative-card reveal">
+        <div class="creative-icon">🎨</div>
+        <h3>Color &amp; Mood</h3>
+        <p>
+          Color grading, tone-shaping, and style matching. Every edit has a
+          mood — warm, cold, aggressive, calm — and color is how you get
+          there.
+        </p>
+      </div>
+    </div>
+
+    <!-- After Effects highlight -->
+    <div class="software-highlight reveal">
+      <div class="software-logo-big">
+        <span>Ae</span>
+      </div>
+      <div class="software-info">
+        <div class="software-kicker">MAIN TOOL</div>
+        <h3>Adobe After Effects</h3>
+        <p>
+          My go-to for motion graphics, VFX compositing, AMV editing,
+          expressions, and everything in between. Years of hands-on practice.
+        </p>
+        <div class="software-tags">
+          <span>Keyframing</span>
+          <span>Expressions</span>
+          <span>Compositing</span>
+          <span>Masking</span>
+          <span>Particles</span>
+          <span>Color Grading</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Showreel placeholder -->
+    <div class="showreel-section">
+      <div class="showreel-header reveal">
+        <h3>Featured Edits</h3>
+        <p>A glimpse of my video work — reel coming online soon.</p>
+      </div>
+
+      <!--
+        TO ADD YOUR ACTUAL VIDEOS:
+        Replace the href in each <a class="showreel-card"> with your YouTube / Vimeo URL,
+        update the title + subtitle, and (optionally) drop a thumbnail image
+        by adding: style="background-image:url('your-thumbnail.jpg');"
+        to the .showreel-thumb div.
+      -->
+      <div class="showreel-grid">
+        <a href="#" class="showreel-card reveal" target="_blank" rel="noopener">
+          <div class="showreel-thumb">
+            <div class="play-btn" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span class="showreel-duration">AMV</span>
+          </div>
+          <div class="showreel-meta">
+            <div class="showreel-title">AMV — Beat-synced edit</div>
+            <div class="showreel-sub">After Effects · motion &amp; timing</div>
+          </div>
+        </a>
+
+        <a href="#" class="showreel-card reveal" target="_blank" rel="noopener">
+          <div class="showreel-thumb">
+            <div class="play-btn" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span class="showreel-duration">VFX</span>
+          </div>
+          <div class="showreel-meta">
+            <div class="showreel-title">VFX &amp; Motion Showcase</div>
+            <div class="showreel-sub">Compositing · particles · grading</div>
+          </div>
+        </a>
+
+        <a href="#" class="showreel-card reveal" target="_blank" rel="noopener">
+          <div class="showreel-thumb">
+            <div class="play-btn" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span class="showreel-duration">EDIT</span>
+          </div>
+          <div class="showreel-meta">
+            <div class="showreel-title">Short Cinematic Edit</div>
+            <div class="showreel-sub">Color · pacing · storytelling</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="showreel-cta reveal">
+        <p>Want the full reel? <a href="mailto:heditrabelsi412@gmail.com">Ask me by email</a> — I'll send it your way.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-contact">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-content reveal">
+      <p class="contact-lead">
+        I'm open to internships, collaborations, and conversations around
+        cybersecurity, cloud, and software engineering. Feel free to reach out.
+      </p>
+      <div class="contact-cards">
+        <a href="mailto:heditrabelsi412@gmail.com" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 13.065 23.64 4.5H.36L12 13.065zM24 6.033 12 14.6.003 6.033V19.5h23.994V6.033z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">heditrabelsi412@gmail.com</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/hedi-trabelsi-39370234a/" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">hedi-trabelsi</div>
+          </div>
+        </a>
+        <a href="https://github.com/Hedi-Trabelsi" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.93c.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.39-3.88-1.39-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value">Hedi-Trabelsi</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> Hedi Trabelsi. Built with care.</p>
+      <p class="footer-note">Designed &amp; coded from Tunisia 🇹🇳</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

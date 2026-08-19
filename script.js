@@ -4,6 +4,8 @@ document.getElementById('year').textContent = new Date().getFullYear();
 // ===== Typed text effect =====
 const phrases = [
   'Engineering Student',
+  'Cybersecurity & Cloud Student',
+  'Backend & API Developer',
   'Full-Stack Developer',
   'SQL & Database Enthusiast',
   'Problem Solver',

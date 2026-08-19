@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Hedi Trabelsi — Software engineering student at ESPRIT. Full-stack development, databases and data engineering. Portfolio of projects and skills." />
+  <meta name="description" content="Hedi Trabelsi — 4th-year engineering student at ESPRIT, Cybersecurity & Cloud specialization. Full-stack development, databases and backend APIs. Portfolio of projects and skills." />
   <meta name="author" content="Hedi Trabelsi" />
-  <title>Hedi Trabelsi — Software Engineering Student</title>
+  <title>Hedi Trabelsi — Engineering Student · Cybersecurity &amp; Cloud</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,10 +47,12 @@
         <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
       </h2>
       <p class="hero-description">
-        Engineering student at <strong>ESPRIT</strong> in Tunisia, building across
-        the stack — from <span class="highlight">full-stack apps</span> to
-        <span class="highlight">databases &amp; data pipelines</span>. Passionate
-        about turning real-world problems into working software.
+        Fourth-year engineering student at <strong>ESPRIT</strong> in Tunisia,
+        specializing in <span class="highlight">Cybersecurity &amp; Cloud</span> and building
+        across the stack — from <span class="highlight">full-stack apps</span> to
+        <span class="highlight">databases &amp; backend APIs</span>. Recently interned at
+        <strong>Albrain Consulting</strong>, building the database and API of an industrial
+        planning platform.
       </p>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -84,16 +86,17 @@
     <div class="about-grid">
       <div class="about-text reveal">
         <p>
-          Hello! I'm <strong>Hedi Trabelsi</strong>, a 3rd-year engineering student at
-          <strong>Esprit School of Engineering</strong> in Tunisia — one of five years
-          toward my engineering degree.
+          Hello! I'm <strong>Hedi Trabelsi</strong>, a 4th-year engineering student at
+          <strong>Esprit School of Engineering</strong> in Tunisia, specializing in
+          <strong class="highlight">Cybersecurity &amp; Cloud</strong> — part of a five-year
+          engineering degree.
         </p>
         <p>
-          As I head into my 4th year, I'm building solid foundations across
-          <strong class="highlight">full-stack development</strong>,
-          <strong class="highlight">databases</strong> and
-          <strong class="highlight">data engineering</strong> — while exploring
-          the specialization tracks ahead of me.
+          I recently completed a software internship at <strong>Albrain Consulting</strong>,
+          where I built the <strong class="highlight">database layer</strong> and the
+          <strong class="highlight">central API</strong> of an industrial planning web
+          platform (FastAPI + PostgreSQL). Alongside my specialization, I keep building solid
+          foundations across full-stack development, databases and backend engineering.
         </p>
         <p>
           My work so far spans full-stack web and desktop applications, mobile
@@ -114,7 +117,7 @@
       </div>
       <div class="about-stats reveal">
         <div class="stat-card">
-          <div class="stat-value">3<span>rd</span></div>
+          <div class="stat-value">4<span>th</span></div>
           <div class="stat-label">Year Engineering<br/>Student</div>
         </div>
         <div class="stat-card">
@@ -158,6 +161,7 @@
         <div class="skill-icon">⚙️</div>
         <h3>Frameworks &amp; Tools</h3>
         <ul class="skill-list">
+          <li>FastAPI</li>
           <li>Symfony / Twig</li>
           <li>JavaFX</li>
           <li>Node.js</li>
@@ -178,14 +182,15 @@
         </ul>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-icon">⚡</div>
-        <h3>Systems &amp; Exploring</h3>
+        <div class="skill-icon">☁️</div>
+        <h3>Systems, Cloud &amp; Security</h3>
         <ul class="skill-list">
-          <li>Linux basics</li>
+          <li>Linux</li>
+          <li>Docker</li>
           <li>Virtualization</li>
-          <li>Docker (learning)</li>
+          <li>Networking fundamentals</li>
+          <li>Cloud &amp; security foundations</li>
           <li>CI/CD concepts</li>
-          <li>Network fundamentals</li>
         </ul>
       </div>
     </div>
@@ -199,10 +204,38 @@
       <div class="section-divider"></div>
     </div>
     <p class="section-subtitle">
-      A look at what I've built so far — all academic projects from my time at ESPRIT.
+      A look at what I've built so far — a software internship at Albrain Consulting plus
+      academic projects from my time at ESPRIT.
     </p>
 
     <div class="projects-grid">
+      <article class="project-card project-card-feature reveal">
+        <div class="project-header">
+          <div class="project-icon">📊</div>
+          <div class="project-links">
+            <span class="project-note">Internship · private repo</span>
+          </div>
+        </div>
+        <h3 class="project-title">Albrain Planning — Industrial APS Platform</h3>
+        <p class="project-description">
+          Software internship at <strong>Albrain Consulting</strong>: an industrial Advanced
+          Planning System combining demand forecasting and production planning
+          (Next.js · FastAPI · PostgreSQL, with dedicated calculation engines). I owned the
+          <strong>database layer</strong> and the <strong>central API</strong> — data modeling
+          (~30 tables with full PK/FK/CHECK integrity), CRUD endpoints, request validation,
+          orchestration of the calculation engines over HTTP, and result persistence
+          (runs replayable from the database). Extended it with a BOM material-constraint
+          feature and five demand-planning modules.
+        </p>
+        <div class="project-tags">
+          <span>FastAPI</span>
+          <span>PostgreSQL</span>
+          <span>Python</span>
+          <span>REST API</span>
+          <span>SQL</span>
+        </div>
+      </article>
+
       <article class="project-card reveal">
         <div class="project-thumb">
           <img src="assets/mini-aps.png" alt="Mini-APS console output" loading="lazy" onerror="this.parentElement.style.display='none'" />
